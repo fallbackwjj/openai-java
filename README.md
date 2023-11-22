@@ -37,7 +37,7 @@ as well as an example project using the service.
 ### Maven
 ```xml
    <dependency>
-    <groupId>com.theokanning.openai-gpt3-java</groupId>
+    <groupId>com.itmuch.openai-gpt3-java</groupId>
     <artifactId>{api|client|service}</artifactId>
     <version>version</version>       
    </dependency>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.itmuch.openai-gpt3-java</groupId>
+  <artifactId>client</artifactId>
+  <version>0.18.2-Ext</version>
+  <name>client</name>
+  <description>Basic retrofit client for OpenAI's GPT APIs</description>
+  <url>https://github.com/fallbackwjj/openai-java</url>
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>https://www.mit.edu/~amini/LICENSE.md</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>itmuch</name>
+      <email>eacdy0000@126.com</email>
+      <url>https://github.com/eacdy</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>https://github.com/fallbackwjj/openai-java.git</connection>
+    <developerConnection>https://github.com/fallbackwjj/openai-java.git</developerConnection>
+    <url>https://github.com/fallbackwjj/openai-java</url>
+  </scm>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.itmuch.openai-gpt3-java</groupId>
+      <artifactId>api</artifactId>
+      <version>0.18.2-Ext</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
+      <artifactId>retrofit</artifactId>
+      <version>2.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
+      <artifactId>adapter-rxjava2</artifactId>
+      <version>2.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
+      <artifactId>converter-jackson</artifactId>
+      <version>2.9.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.28</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.8.2</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
