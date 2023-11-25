@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.itmuch.openai-gpt3-java</groupId>
-  <artifactId>parent</artifactId>
+  <artifactId>openapi-java</artifactId>
   <version>0.18.2-Ext</version>
-  <name>parent</name>
+  <name>openapi-java</name>
   <packaging>pom</packaging>
 
-  <description>Parent of Basic retrofit client for OpenAI's GPT APIs</description>
-  <url>https://github.com/fallbackwjj/openai-java</url>
+  <description>Parent of OpenAI's GPT APIs</description>
+  <url>https://github.com/eacdy/openai-java</url>
   <licenses>
     <license>
       <name>The MIT License</name>
@@ -25,9 +25,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>https://github.com/fallbackwjj/openai-java.git</connection>
-    <developerConnection>https://github.com/fallbackwjj/openai-java.git</developerConnection>
-    <url>https://github.com/fallbackwjj/openai-java</url>
+    <connection>https://github.com/eacdy/openai-java.git</connection>
+    <developerConnection>https://github.com/eacdy/openai-java.git</developerConnection>
+    <url>https://github.com/eacdy/openai-java</url>
   </scm>
 
   <properties>
@@ -40,4 +40,43 @@
     <module>client</module>
     <module>service</module>
   </modules>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+          <source>1.8</source>
+          <target>1.8</target>
+          <parameters>true</parameters>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>

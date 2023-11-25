@@ -7,7 +7,7 @@
   <version>0.18.2-Ext</version>
   <name>api</name>
   <description>Basic java objects for the OpenAI GPT APIs</description>
-  <url>https://github.com/fallbackwjj/openai-java</url>
+  <url>https://github.com/eacdy/openai-java</url>
   <licenses>
     <license>
       <name>The MIT License</name>
@@ -23,9 +23,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>https://github.com/fallbackwjj/openai-java.git</connection>
-    <developerConnection>https://github.com/fallbackwjj/openai-java.git</developerConnection>
-    <url>https://github.com/fallbackwjj/openai-java</url>
+    <connection>https://github.com/eacdy/openai-java.git</connection>
+    <developerConnection>https://github.com/eacdy/openai-java.git</developerConnection>
+    <url>https://github.com/eacdy/openai-java</url>
   </scm>
 
   <properties>
