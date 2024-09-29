@@ -1,7 +1,11 @@
 package com.theokanning.openai;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.theokanning.openai.completion.chat.ChatCompletionRequest;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * The OpenAI resources used by a request
@@ -25,4 +29,16 @@ public class Usage {
      */
     @JsonProperty("total_tokens")
     long totalTokens;
+
+    @JsonProperty("completion_tokens_details")
+    Details completionTokensDetails;
+
+    @Data
+    @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class Details {
+        @JsonProperty("reasoning_tokens")
+        long reasoningTokens;
+    }
 }
