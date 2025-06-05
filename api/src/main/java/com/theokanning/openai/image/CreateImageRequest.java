@@ -57,4 +57,16 @@ public class CreateImageRequest {
      * A unique identifier representing your end-user, which will help OpenAI to monitor and detect abuse.
      */
     String user;
+
+    /** 2025.06.05 **/
+    String moderation;
+
+    String background;
+
+    @JsonProperty("output_compression")
+    Integer outputCompression;
+
+    @JsonProperty("output_format")
+    String outputFormat;
+
 }
