@@ -68,5 +68,16 @@ public class CreateImageRequest {
 
     @JsonProperty("output_format")
     String outputFormat;
+    Integer width;
+    Integer height;
 
+    Params params;
+    @Data
+    @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class Params {
+        @JsonProperty("seed")
+        Integer seed;
+    }
 }
